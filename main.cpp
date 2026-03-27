@@ -1,12 +1,15 @@
 #include<iostream>
-#include<string>
-
 
 int main(){
+    
+    int a = 8;  //int numero inteiro
+    float b = 9.6;  //float numero de ponto flutuante ocupa 4bytes. 
+    double c = 4.6;  //double ocupa 8bytes
+    
 
-    std::string saudacao = "Boa Noite, Eduardo! ";
-
-    std::cout<<saudacao<<std::endl;
+    std::cout<<a<<std::endl; 
+    std::cout<<b<<std::endl;
+    std::cout<<c<<std::endl;
 
     return 0;
 
