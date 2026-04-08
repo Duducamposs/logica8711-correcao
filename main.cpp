@@ -1,27 +1,21 @@
 #include<iostream>
+#include<windows.h>
 #include<string>
-
-int main(){         
-
-    std::string nome;
-    int idade;
-    float altura;
+#include<cmath>
 
 
-    std::cout<<"qual seu nome?"<<std::endl;
-    std::cin>>nome;
+int main(){
 
-    std::cout<<"qual sua idade?"<<std::endl;
-    std::cin>>idade;
-
-    std::cout<<"qual sua altura"<<std::endl;
-    std::cin>>altura; 
+    int a = 5;
+    int b = 3;
+    int c = 5;
+    int d = 2;
 
 
+    int maior1 = std::max(a, b);
+    int maior2 = std::max(c, d);
 
-    std::cout<<"Seu nome é "<<" nome"<<"!!"<<std::endl;
-    std::cout<<"Sua idade é "<<" idade"<<"!!"<<std::endl;
-    std::cout<<"Sua altura é "<<" altura"<<"!!"<<std::endl;
+    std::cout<<(maior1 > maior2)<<std::endl;
 
 
 
