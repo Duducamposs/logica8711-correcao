@@ -6,19 +6,20 @@
 
 int main(){
 
+    SetConsoleOutputCP(CP_UTF8);//
+    SetConsoleCP(CP_UTF8);//
+
     int a = 5;
-    int b = 3;
-    int c = 5;
-    int d = 2;
+    int b = 2;
 
-
-    int maior1 = std::max(a, b);
-    int maior2 = std::max(c, d);
-
-    std::cout<<(maior1 > maior2)<<std::endl;
+    if(a > b){
+         std::cout<<"A é maior que B."<<std::endl;
+    }else{
+        std::cout<<"B é maior que A."<<std::endl;
+    }
 
 
 
-    return 0;
+     return 0;
 
 }
