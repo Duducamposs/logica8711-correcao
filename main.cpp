@@ -1,7 +1,6 @@
 #include<iostream>
 #include<windows.h>
-#include<string>
-#include<cmath>
+
 
 
 int main(){
@@ -9,22 +8,25 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);//
     SetConsoleCP(CP_UTF8);//
 
-    
-    std:: string user;
-    std:: string senha;
+    int idade;
 
-    std::cout<<"Digite seu usuário de acesso: "<<std::endl;
-    std::cin>>user;
+    std::cout<<"Digite a sua idade: "<<std::endl;
+    std::cin>>idade;
 
-    std::cout<<"Digite sua senha: "<<std::endl;
-    std::cin>>senha;
-
-    if(senha == "42283111"){
-        std::cout<<"O usuário "<<user<<" está logado com sucesso!!"<<std::endl;
+    if(idade < 0){
+        std::cout<<"Idade inválida"<<std::endl;
+    }else if(idade <= 2){
+        std::cout<<"Você é um bebê!"<<std::endl;
+    }else if(idade<= 8){
+        std::cout<<"Você é uma criança!"<<std::endl;
+    }else if (idade <= 16){
+        std::cout<<"Você é um adolecente!"<<std::endl;
+    }else if(idade <= 60){
+        std::cout<<"você é adulto(a)"<<std::endl;
     }else{
-        std::cout<<"Usuário ou senha inválidos!"<<std::endl;
+        std::cout<<"você é um(a) sênior!"<<std::endl;
     }
-
-     return 0;
-
-}
+ 
+   
+    return 0;
+    }
