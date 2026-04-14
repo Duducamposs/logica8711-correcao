@@ -1,8 +1,6 @@
 #include<iostream>
 #include<windows.h>
 
-
-
 int main(){
 
     SetConsoleOutputCP(CP_UTF8);//
@@ -14,6 +12,7 @@ int main(){
     float valorParafuso = 1.40;
     float valorTotalParafuso;
     float desconto;
+    float juros;
 
     std::cout<<"Digite a quantidade de parafuso desejado: "<<std::endl;
     std::cin>>qtdParafuso;
@@ -32,7 +31,8 @@ int main(){
         desconto = valorTotalParafuso * 0.90;
         std::cout<<"Sua compra ficou no valor de R$: "<<desconto<<std::endl;
     }else{
-        std::cout<<"Sua compra ficou no valor total de R$: "<<valorTotalParafuso<<std::endl;
+        juros = valorTotalParafuso * 1.10;
+        std::cout<< "Sua compra ficou no valor total de R$: "<<valorTotalParafuso<<std::endl;
     }
  
    
