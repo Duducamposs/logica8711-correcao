@@ -9,42 +9,14 @@ int main(){
 
     int opcao;
 
-    std::cout<<"Digíte um valor para opção: " <<std::endl;
-    std::cin>>opcao;
+    int soma = 0;
 
-    switch(opcao){ 
-        case 1:
-            std::cout<<"Domingo!"<<std::endl;
-            break;
-
-        case 2:
-            std::cout<<"Segunda-Feira!"<<std::endl;
-            break;
-
-        case 3:
-            std::cout<<"terça-Feira!"<<std::endl;  
-            break;
-
-        case 4:
-            std::cout<<"Quarta-Feira!"<<std::endl;
-            break;
-
-        case 5:
-            std::cout<<"Quinta-Feira!"<<std::endl;
-            break;
-
-        case 6:
-            std::cout<<"Sexta-Feira!"<<std::endl;
-            break;
-
-        case 7:
-            std::cout<<"Sábado"<<std::endl;
-            break;
-
-        default:
-            std::cout<<"Número inválido!"<<std::endl;
+    for(int i = 1; i <= 5; i++){
+        soma = soma + i;
     }
-    
+
+    std::cout<<"A soma é: "<<soma<<std::endl;
+ 
 
    
     return 0;
