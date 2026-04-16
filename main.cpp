@@ -4,20 +4,13 @@
 
 int main(){
 
-    SetConsoleOutputCP(CP_UTF8);//
-    SetConsoleCP(CP_UTF8);
+    for(int i = 1; i <= 2; ++i){
+        std::cout<<"Externo: "<<i<<std::endl;
 
-    int opcao;
-
-    int soma = 0;
-
-    for(int i = 1; i <= 5; i++){
-        soma = soma + i;
+        for(int j = 1; j <=3; ++j){
+            std::cout<<"Interno: "<<j<<std::endl;
+        }
     }
-
-    std::cout<<"A soma é: "<<soma<<std::endl;
- 
-
    
     return 0;
     }
