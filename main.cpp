@@ -4,22 +4,19 @@
 
 
    int main(){
+
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 
-    int num;
+    int totalSeconds;
 
+    std::cout<<"Enter total seconds: "<<std::endl;
+    std::cin>>totalSeconds;
 
-    std::cout<<"Digite um Número "<<std::endl;
-    std::cin>>num;
+    int minutes = totalSeconds / 60;
+    int seconds = totalSeconds % 60;
 
-    std::cout<<num%2<<std::endl;
-
-    if(num % 2 == 0){
-        std::cout<<num<<" é par!"<<std::endl;
-    }else{
-        std::cout<<num<<" é impar!!"<<std::endl;
-    }
+    std::cout<<"time: "<<minutes<<"minutes and "<<seconds<<" seconds."<<std::endl; 
    
    
     return 0;
